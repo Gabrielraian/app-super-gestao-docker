@@ -7,5 +7,6 @@ RUN php composer-setup.php
 RUN php -r "unlink('composer-setup.php');"
 RUN mv composer.phar /usr/local/bin/composer
 
+
 WORKDIR /var/www/app_super_gestao
 CMD ["php", "-S", "0.0.0.0:8001", "-t", "public"]
