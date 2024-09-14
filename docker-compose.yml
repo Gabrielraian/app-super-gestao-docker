@@ -7,7 +7,7 @@ services:
     volumes:
       - ./app_super_gestao:/var/www/app_super_gestao
     ports:
-      - "8001:8001"
+      - "8000:8000"
     depends_on:
       - db
 
